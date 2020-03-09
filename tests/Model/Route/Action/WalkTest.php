@@ -30,7 +30,10 @@ class WalkTest extends TestCase
         );
     }
 
-    public function dataApplyOn()
+    /**
+     * @return array
+     */
+    public function dataApplyOn(): array
     {
         return [
             0 => [

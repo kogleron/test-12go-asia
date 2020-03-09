@@ -19,6 +19,8 @@ class AvgDestinationCalculatorTest extends TestCase
     /**
      * @covers ::calculate
      * @dataProvider dataCalculate
+     * @param array $routeLines
+     * @param Point $expected
      */
     public function testCalculate(array $routeLines, Point $expected): void
     {
@@ -35,6 +37,9 @@ class AvgDestinationCalculatorTest extends TestCase
         self::assertEquals($expected, $actual);
     }
 
+    /**
+     * @return array
+     */
     public function dataCalculate(): array
     {
         return [

@@ -8,6 +8,10 @@ use Kogleron\Test12GoAsia\App\Model\Route\Action;
 use Kogleron\Test12GoAsia\App\Model\Route\DirectedPoint;
 use Kogleron\Test12GoAsia\App\Model\Route\Direction;
 
+/**
+ * Class Turn
+ * @package Kogleron\Test12GoAsia\App\Model\Route\Action
+ */
 class Turn extends Action
 {
     /**
@@ -15,11 +19,19 @@ class Turn extends Action
      */
     private $degrees;
 
+    /**
+     * Turn constructor.
+     * @param float $degrees
+     */
     public function __construct(float $degrees)
     {
         $this->degrees = $degrees;
     }
 
+    /**
+     * @param DirectedPoint $directedPoint
+     * @return DirectedPoint
+     */
     public function applyOn(DirectedPoint $directedPoint): DirectedPoint
     {
         return new DirectedPoint(

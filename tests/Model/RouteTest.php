@@ -21,7 +21,7 @@ class RouteTest extends TestCase
      * @param string $line
      * @param Route\DirectedPoint $expected
      */
-    public function testGetEndPoint(string $line, Route\DirectedPoint $expected)
+    public function testGetEndPoint(string $line, Route\DirectedPoint $expected): void
     {
         $parser = new RouteParser(new StartPointParser(), new ActionsParser());
         $route = $parser->getRoute($line);

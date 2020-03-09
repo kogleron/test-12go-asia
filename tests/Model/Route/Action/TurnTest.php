@@ -18,8 +18,11 @@ class TurnTest extends TestCase
     /**
      * @covers ::applyOn
      * @dataProvider dataApplyOn
+     * @param float $startDegrees
+     * @param float $turnDegrees
+     * @param float $expectedDegrees
      */
-    public function testApplyOn(float $startDegrees, float $turnDegrees, float $expectedDegrees)
+    public function testApplyOn(float $startDegrees, float $turnDegrees, float $expectedDegrees): void
     {
         $directedPoint = new DirectedPoint(
             new Point(0, 0),
@@ -33,7 +36,10 @@ class TurnTest extends TestCase
         );
     }
 
-    public function dataApplyOn()
+    /**
+     * @return array
+     */
+    public function dataApplyOn(): array
     {
         return [
             [

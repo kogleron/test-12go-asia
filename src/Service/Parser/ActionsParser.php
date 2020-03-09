@@ -7,6 +7,10 @@ namespace Kogleron\Test12GoAsia\App\Service\Parser;
 use Kogleron\Test12GoAsia\App\Model\Route\Action;
 use RuntimeException;
 
+/**
+ * Class ActionsParser
+ * @package Kogleron\Test12GoAsia\App\Service\Parser
+ */
 class ActionsParser
 {
     /**

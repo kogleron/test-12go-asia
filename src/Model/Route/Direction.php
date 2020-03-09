@@ -4,6 +4,10 @@ declare(strict_types=1);
 
 namespace Kogleron\Test12GoAsia\App\Model\Route;
 
+/**
+ * Class Direction
+ * @package Kogleron\Test12GoAsia\App\Model\Route
+ */
 class Direction
 {
     /**
@@ -11,6 +15,10 @@ class Direction
      */
     private $degrees;
 
+    /**
+     * Direction constructor.
+     * @param float $degrees
+     */
     public function __construct(float $degrees)
     {
         $this->degrees = $degrees;

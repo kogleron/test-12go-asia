@@ -36,7 +36,7 @@ class InputParser implements Iterator
     /**
      * @inheritDoc
      */
-    public function next()
+    public function next(): void
     {
         ++$this->position;
     }
@@ -52,7 +52,7 @@ class InputParser implements Iterator
     /**
      * @inheritDoc
      */
-    public function valid()
+    public function valid(): bool
     {
         return isset($this->cases[$this->position]);
     }
@@ -60,7 +60,7 @@ class InputParser implements Iterator
     /**
      * @inheritDoc
      */
-    public function rewind()
+    public function rewind(): void
     {
         $this->position = 0;
     }

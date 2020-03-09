@@ -4,6 +4,10 @@ declare(strict_types=1);
 
 namespace Kogleron\Test12GoAsia\App\Model\Route;
 
+/**
+ * Class DirectedPoint
+ * @package Kogleron\Test12GoAsia\App\Model\Route
+ */
 class DirectedPoint
 {
     /**
@@ -15,6 +19,11 @@ class DirectedPoint
      */
     private $direction;
 
+    /**
+     * DirectedPoint constructor.
+     * @param Point $point
+     * @param Direction $direction
+     */
     public function __construct(Point $point, Direction $direction)
     {
         $this->point = $point;
