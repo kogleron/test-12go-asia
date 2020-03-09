@@ -1,0 +1,25 @@
+{
+    "name": "kogleron/test-12go-asia",
+    "authors": [
+        {
+            "name": "kogleron",
+            "email": "kogleron@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Kogleron\\Test12GoAsia\\App\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Kogleron\\Test12GoAsia\\Tests\\": "tests/"
+        }
+    },
+    "require": {
+        "php": "^7.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.5"
+    }
+}
